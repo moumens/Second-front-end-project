@@ -83,10 +83,11 @@ a {
 
 .main-heading h2 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 70px;
     position: relative;
+    color: #686767;
 }
 
 .main-heading h2::before {
@@ -103,15 +104,16 @@ a {
 
 
 .main-heading p {
-    margin: 0 auto 100px;
+    margin: 0 auto 70px;
     color: #777;
+    max-width: 600px;
 }
 
 /* -----------END COMPONENT--------------- */
 
 /*----------------START HEADER--------------*/
 header {
-    background-color: black;
+    background-color: rgb(40, 102, 121);
 }
 
 header .container {
@@ -249,4 +251,77 @@ header nav ul li a:active {
 
 .serv-box p {
     color: #777;
+}
+
+/* --------------------END SERVICES--------------- */
+
+/*---------------------------START video------------------------------------*/
+.video {
+    position: relative;
+
+    margin: 50px 20px;
+}
+
+.video video {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video .text {
+    background-color: rgba(var(--main-color), 0.5);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+
+
+
+}
+
+.video .text h2 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.video .text p {
+    color: white;
+    padding-bottom: 50px;
+    font-size: 9px;
+    text-align: center;
+}
+
+.video .text button {
+    position: absolute;
+    bottom: 15px;
+    background-color: rgba(41, 41, 41, 0.973);
+    color: white;
+    font-size: 8px;
+    width: 70px;
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ---------end video-------- */
+
+/* ------start about us-------- */
+
+.about-us {
+    position: relative;
+}
+
+
+
+.about-us img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+
 }
